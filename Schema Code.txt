@@ -1,0 +1,112 @@
+Table customer {
+  id int PK
+  name str
+  email str
+  phone str
+  password str
+}
+
+Table billingInfo {
+  id int PK
+  street_name str
+  apartment_no str
+  city str
+  state str
+  credit_card_no int
+  expiration_month int
+  expiration_day int
+  name_on_card str
+  pin_no int
+  customer_id int [ref:- customer.id]
+}
+
+Table product {
+  id int PK
+  name str
+  price int // float
+  image str 
+  description str 
+  category_id int [ref:- category.id]
+  condition_id id [ref:- condition.id]
+}
+
+Table category {
+  id int PK
+  name str
+}
+
+Table condition {
+  id int PK
+  name str
+}
+
+Table song {
+  id int PK
+  name str
+  price int // float
+  image str 
+  artist str // seperate table??
+  
+  formatType_id int [ref:- formatType.id]
+  genre_id int [ref:- genre.id] // style?
+}
+
+Table formatType {
+  id int PK
+  name str
+}
+
+Table genre {
+  id int PK
+  name str
+}
+
+Table shoppingCart {
+  id int PK
+  name str
+  
+  customer_id int [ref:- customer.id]
+}
+
+Table cartProductItems {
+  id int PK
+  quantity int
+  
+  product_id int [ref:- product.id]
+  shoppingCart_id int [ref:- shoppingCart.id]
+}
+
+Table cartSongItems {
+  id int PK
+  quantity int
+  
+  song_id int [ref:- song.id]
+  shoppingCart_id int [ref:- shoppingCart.id]
+}
+
+Table purchaseInfo {
+  id int PK
+  name str
+  
+  customer_id int [ref:- customer.id]
+  shoppingCart_id int [ref:- shoppingCart.id]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
