@@ -2,6 +2,7 @@ Table customer {
   id int PK
   name str
   email str
+  username str
   phone str
   password str
 }
