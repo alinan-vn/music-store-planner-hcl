@@ -14,7 +14,10 @@
 - 1-to-many: Shopping Cart, Purchase Info
 
 ### Crud Functionalities
-- 
+- Create: Register a customer
+- Read: Get customer info
+- Update: Change customer info
+- Delete: delete account
 
 ## Billing Info
 - 1-to-1: Customer
