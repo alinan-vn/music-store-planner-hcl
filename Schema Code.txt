@@ -47,9 +47,15 @@ Table song {
   price int // float
   image str 
   artist str // seperate table??
+  album_id int [ref:- album.id]
   
   formatType_id int [ref:- formatType.id]
   genre_id int [ref:- genre.id] // style?
+}
+
+Table album {
+  id int PK
+  name str
 }
 
 Table formatType {
@@ -64,8 +70,6 @@ Table genre {
 
 Table shoppingCart {
   id int PK
-  name str
-  
   customer_id int [ref:- customer.id]
 }
 
@@ -85,7 +89,7 @@ Table cartSongItems {
   shoppingCart_id int [ref:- shoppingCart.id]
 }
 
-Table purchaseInfo {
+Table receipt {
   id int PK
   name str
   
@@ -93,7 +97,11 @@ Table purchaseInfo {
   shoppingCart_id int [ref:- shoppingCart.id]
 }
 
-
+Table admin { // doesnt own anything, simply gives master rights on all tables
+  id int PK
+  name str
+  password str
+}
 
 
 
