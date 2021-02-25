@@ -13,7 +13,7 @@
 - 1-to-1: Billing Info
 - 1-to-many: Shopping Cart, Purchase Info
 
-### Crud Functionalities
+#### Crud Functionalities
 - Create: Register a customer
 - Read: Get customer info
 - Update: Change customer info
@@ -23,7 +23,7 @@
 - 1-to-1: Customer
 - Join Table (Seperate from customer details for simplicity -> Can also just be a part of Customer table)
 
-### Crud Functionalities
+#### Crud Functionalities
 - 
 
 ## Shopping Cart
@@ -32,7 +32,7 @@
 - many-to-1: Customer
 - Join Table (That can be referred to any items being purchased by one user)
 
-### Crud Functionalities
+#### Crud Functionalities
 - 
 
 ## Purchase Info
@@ -40,7 +40,7 @@
 - many-to-1: Customer
 - Join Table (also serves to show when a Shopping Cart is no longer active by Purchase Info's existence)
 
-### Crud Functionalities
+#### Crud Functionalities
 -
 
 ## Cart Product Items
@@ -48,7 +48,7 @@
 - mant-to-1: Shopping Cart
 - Join Table
 
-### Crud Functionalities
+#### Crud Functionalities
 -
 
 ## Cart Song Items
@@ -56,45 +56,45 @@
 - mant-to-1: Shopping Cart
 - Join Table
 
-### Crud Functionalities
+#### Crud Functionalities
 -
 
 ## Product
 - 1-to-1: Cart Product Items, Category, Condition
 
-### Crud Functionalities
+#### Crud Functionalities
 -
 
 ## Song
 - 1-to-1: Cart Song Items, Format Type, Genre
 
-### Crud Functionalities
+#### Crud Functionalities
 -
 
 ## Category
 - 1-to-many: Product 
 - Fixed Set: [Accessory, Amp, Instrument, etc]
 
-### Crud Functionalities
+#### Crud Functionalities
 -
 
 ## Condition
 - 1-to-many: Product
 - Fixed Set: [New, Like New, Used, Worn, etc]
 
-### Crud Functionalities
+#### Crud Functionalities
 -
 
 ## Format Type
 - 1-to-many: Song
 - Fixed Set: [CD, Digital, Vinyl, etc]
 
-### Crud Functionalities
+#### Crud Functionalities
 -
 
 ## Genre
 - 1-to-many: Song
 - Fixed Set: [Rock, Blues, Jazz, Ska, Funk, etc]
 
-### Crud Functionalities
+#### Crud Functionalities
 -
