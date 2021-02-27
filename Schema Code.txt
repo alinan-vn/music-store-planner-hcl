@@ -25,7 +25,7 @@ Table product {
   id int PK
   name str
   price int // float
-  image str 
+  image str
   description str 
   category_id int [ref:- category.id]
   condition_id id [ref:- condition.id]
