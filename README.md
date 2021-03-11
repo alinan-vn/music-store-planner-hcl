@@ -2,6 +2,7 @@
 - FSD Java Capstone pdf is original capstone pdf with the writing prompt, diagrams, and wireframes.
 - Visual Schema Diagram is a PNG screen shot of a schema mocked up in dbdiagram.io 
 - Schema Code.txt is the code I wrote in dbdiagram.io to make the schema representation
+- Sprint Planning excel sheet: https://docs.google.com/spreadsheets/d/15uhL3pNxoAOg25szR9ukARcExOL7Yn87bO-1ZHlk2N8/edit?usp=sharing
 
 # Tables
 
